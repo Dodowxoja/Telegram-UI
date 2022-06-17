@@ -1,7 +1,7 @@
 {
     "Cancel":"Bekor qilish",
     "Next":"Keyingisi",
-    "Your Phone":"Sizning telefoningiz",
+    "Your_P":"Sizning telefoningiz",
     "P_c_y_c_c_a_e_y_p_n":"Iltimos, mamlakat kodingizni tasdiqlang va telefon raqamingizni kiriting.",
     "Sync_Contacts":"Kontaktlarni sinxronlash",
 
@@ -126,6 +126,6 @@
     "App_i":"Ilova belgisi",
     "Default":"Standart",
    
-    "English":"English",
-    "Uzbek":"Uzbek"   
+    "english":"English",
+    "uzbek":"Uzbek"   
 }

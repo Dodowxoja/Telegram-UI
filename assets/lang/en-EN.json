@@ -1,7 +1,7 @@
 {
     "Cancel":"Cancel",
     "Next":"Next",
-    "Your Phone":"Your Phone",
+    "Your_P":"Your Phone",
     "P_c_y_c_c_a_e_y_p_n":"Please confirm your country code and enter your phone number.",
     "Sync_Contacts":"Sync Contacts",
 
@@ -126,6 +126,6 @@
     "App_i":"App icon",
     "Default":"Default",
    
-    "English":"English",
-    "Uzbek":"Uzbek"   
+    "english":"English",
+    "uzbek":"Uzbek"   
 }
