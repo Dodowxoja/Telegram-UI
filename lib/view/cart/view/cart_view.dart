@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:telegram/core/components/my_text_style_comp.dart';
 import 'package:telegram/core/constants/color_const.dart';
-import 'package:telegram/view/cart/calls/calls_view.dart';
-import 'package:telegram/view/cart/chats/chats_view.dart';
-import 'package:telegram/view/cart/contacts/contacts_view.dart';
-import 'package:telegram/view/cart/settings/settings_view.dart';
+import 'package:telegram/view/cart/pages/calls/calls_view.dart';
+import 'package:telegram/view/cart/pages/chats/chats_view.dart';
+import 'package:telegram/view/cart/pages/contacts/contacts_view.dart';
+import 'package:telegram/view/cart/pages/settings/settings_view.dart';
 
 class CartView extends StatefulWidget {
   const CartView({Key? key}) : super(key: key);
