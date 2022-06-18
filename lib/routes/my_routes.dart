@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:telegram/view/auth/auth_view.dart';
+import 'package:telegram/view/auth/view/auth_view.dart';
 import 'package:telegram/view/cart/cart_view.dart';
 import 'package:telegram/view/cart/chats/chat_view.dart';
 import 'package:telegram/view/pages/info/info_view.dart';
@@ -13,7 +13,7 @@ class MyRoutes {
     var args = s.arguments;
     switch (s.name) {
       case '/auth':
-        return MaterialPageRoute(builder: (_) => const AuthView());
+        return MaterialPageRoute(builder: (_) => AuthView());
 
       case '/cart':
         return MaterialPageRoute(builder: (_) => const CartView());
@@ -25,13 +25,13 @@ class MyRoutes {
         return MaterialPageRoute(builder: (_) => const InfoView());
 
       case '/auth':
-        return MaterialPageRoute(builder: (_) => const AuthView());
+        return MaterialPageRoute(builder: (_) => AuthView());
 
       case '/auth':
-        return MaterialPageRoute(builder: (_) => const AuthView());
+        return MaterialPageRoute(builder: (_) => AuthView());
 
       case '/auth':
-        return MaterialPageRoute(builder: (_) => const AuthView());
+        return MaterialPageRoute(builder: (_) => AuthView());
     }
   }
 }
