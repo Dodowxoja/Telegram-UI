@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:telegram/view/auth/view/auth_view.dart';
-import 'package:telegram/view/cart/cart_view.dart';
+import 'package:telegram/view/cart/view/cart_view.dart';
 import 'package:telegram/view/cart/chats/chat_view.dart';
 import 'package:telegram/view/pages/info/info_view.dart';
 

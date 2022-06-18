@@ -21,6 +21,7 @@ class ColorsConst {
   static Color color037EE5 = const Color(0xff037EE5);
   static Color color00C900 = const Color(0xff00C900);
   static Color color999999 = const Color(0xff999999);
+  static Color color545458 = const Color(0xff545458);
 
   // Telegram Chat Modal (3 - Page)
   static Color color858E96 = const Color(0xff858E96).withOpacity(0.5);

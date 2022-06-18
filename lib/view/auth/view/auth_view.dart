@@ -5,6 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:telegram/core/components/my_text_style_comp.dart';
 import 'package:telegram/view/auth/cubit/auth_cubit.dart';
 import 'package:telegram/view/auth/state/auth_state.dart';
 
@@ -87,7 +88,7 @@ class AuthView extends StatelessWidget {
                     children: [
                       Text(
                         'Sync_Contacts'.tr(),
-                        style: myTextStyle(),
+                        style: MyTextStyleComp.myTextStyle(size: 17),
                       ),
                       CupertinoSwitch(
                         value: context.watch<AuthCubit>().syncCont,
@@ -103,15 +104,6 @@ class AuthView extends StatelessWidget {
           },
         ),
       ),
-    );
-  }
-
-  TextStyle myTextStyle({size, color, weight, style}) {
-    return TextStyle(
-      fontSize: 17,
-      color: color,
-      fontWeight: weight,
-      fontStyle: style,
     );
   }
 }
