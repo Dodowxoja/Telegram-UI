@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:telegram/core/components/my_app_bar_contacts_comp.dart';
+import 'package:telegram/core/components/appbars/my_app_bar_contacts_comp.dart';
 import 'package:telegram/core/components/my_text_style_comp.dart';
 import 'package:telegram/core/constants/color_const.dart';
 

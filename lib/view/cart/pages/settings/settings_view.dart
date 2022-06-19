@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:telegram/core/components/my_app_bar_setting_comp.dart';
-import 'package:telegram/core/components/my_container_setting_comp.dart';
-import 'package:telegram/core/components/my_divider_setting_comp.dart';
-import 'package:telegram/core/components/my_inkwell_settings_comp.dart';
+import 'package:telegram/core/components/appbars/my_app_bar_setting_comp.dart';
+import 'package:telegram/core/components/containers/my_container_setting_comp.dart';
+import 'package:telegram/core/components/dividers/my_divider_setting_comp.dart';
+import 'package:telegram/core/components/inkwells/my_inkwell_settings_comp.dart';
 import 'package:telegram/core/components/my_text_style_comp.dart';
 import 'package:telegram/core/constants/color_const.dart';
 
