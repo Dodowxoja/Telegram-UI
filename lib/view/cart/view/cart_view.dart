@@ -31,7 +31,7 @@ class _CartViewState extends State<CartView> with TickerProviderStateMixin {
       body: TabBarView(
         physics: const NeverScrollableScrollPhysics(),
         controller: controller,
-        children:  [
+        children:  const [
           ContactsView(),
           CallsView(),
           ChatsView(),
