@@ -1,5 +1,4 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:telegram/core/components/my_text_style_comp.dart';
@@ -26,32 +25,82 @@ class ChatsView extends StatelessWidget {
           InkWell(child: SvgPicture.asset('assets/icons/chatsAppBarShape.svg')),
           const SizedBox(width: 10),
         ],
+        bottom: PreferredSize(
+          preferredSize: Size(MediaQuery.of(context).size.width, 36),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: Container(
+              decoration: BoxDecoration(
+                color: ColorsConst.color767680_12,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              height: 36,
+              child: 
+              
+              TextFormField(
+                keyboardType: TextInputType.name,
+                // cont: ,
+                controller: TextEditingController(),
+                decoration: const InputDecoration(
+                //  suffix: Text('data1'),
+                //  label: Text('data2'),
+                //  counter: Text('data3'),
+                //  prefix: Row(
+                //    mainAxisAlignment: MainAxisAlignment.center,
+                //    children: [
+                //      SvgPicture.asset('assets/icons/chatsAppBarSearch.svg'),
+                //      const SizedBox(width: 7),
+                //      Text(
+                //        'Search for messages or users',
+                //        style: MyTextStyleComp.myTextStyle(
+                //          color: ColorsConst.color3C3C43,
+                //          size: 17,
+                //        ),
+                //      ),
+                //    ],
+                //  ),
+                //  hintText: 'Search for messages or users',
+                  filled: true,
+                  border:  OutlineInputBorder(
+                    borderRadius: BorderRadius.zero,
+                    borderSide: BorderSide.none,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
       ),
       body: SingleChildScrollView(
         child: Column(
-          
           children: [
             SizedBox(
               height: MediaQuery.of(context).size.height,
-              child: ListView.builder( 
-                itemBuilder: (_,__){
-                  return  InkWell(
+              child: ListView.builder(
+                itemBuilder: (_, __) {
+                  return InkWell(
                     child: ListTile(
                       leading: CircleAvatar(
                         radius: 30,
-                        backgroundImage: AssetImage('assets/images/users/${ChatsData.chatsDate[__]['image']}.png'),
+                        backgroundImage: AssetImage(
+                            'assets/images/users/${ChatsData.chatsDate[__]['image']}.png'),
                       ),
                       title: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(ChatsData.chatsDate[__]['name']),
-                          ChatsData.chatsDate[__]['bio'] != 'null'? Text(ChatsData.chatsDate[__]['bio']) : const SizedBox(),
+                          ChatsData.chatsDate[__]['bio'] != 'null'
+                              ? Text(ChatsData.chatsDate[__]['bio'])
+                              : const SizedBox(),
                         ],
                       ),
                       subtitle: Text(ChatsData.chatsDate[__]['comment']),
                     ),
-                    onLongPress: (){
-                      showDialog(context: context, builder: (context) => alertDialog(context));
+                    onLongPress: () {
+                      showDialog(
+                        context: context,
+                        builder: (context) => alertDialog(context),
+                      );
                     },
                   );
                 },
@@ -64,14 +113,14 @@ class ChatsView extends StatelessWidget {
     );
   }
 
-  AlertDialog alertDialog(BuildContext context){
+  AlertDialog alertDialog(BuildContext context) {
     return AlertDialog(
       backgroundColor: ColorsConst.color858E96.withAlpha(240),
       insetPadding: EdgeInsets.zero,
       contentPadding: const EdgeInsets.all(8),
       actionsAlignment: MainAxisAlignment.start,
       content: Padding(
-        padding:const  EdgeInsets.only(left: 11,right: 11,top: 76),
+        padding: const EdgeInsets.only(left: 11, right: 11, top: 76),
         child: SizedBox(
           width: MediaQuery.of(context).size.width * 1,
           child: Column(
@@ -81,7 +130,7 @@ class ChatsView extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 1,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                color: Colors.red,
+                  color: Colors.red,
                 ),
               ),
             ],
@@ -98,14 +147,15 @@ class ChatsView extends StatelessWidget {
             color: ColorsConst.colorFEFEFE,
           ),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              a('Mark as Unread',''),
-              Divider(),
-              a('Mark as Unread',''),
-              Divider(),
-              a('Mark as Unread',''),
-              Divider(),
-              a('Mark as Unread',''),  
+              a(context, 'Mark as Unread', 'chatModalCommet'),
+              const Divider(),
+              a(context, 'Pin', 'chatModalPin'),
+              const Divider(),
+              a(context, 'Mute', 'chatModalMute'),
+              const Divider(),
+              a(context, 'Delete', 'chatModalDelete'),
             ],
           ),
         ),
@@ -113,12 +163,30 @@ class ChatsView extends StatelessWidget {
     );
   }
 
-  Row a(text,nameSVG) {
-    return Row(
-      children: [
-        Text('$text'.tr()),
-        SvgPicture.asset('assets/icons/$nameSVG.svg')
-      ],
+  Padding a(BuildContext context, text, nameSVG) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: InkWell(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              '$text'.tr(),
+              style: MyTextStyleComp.myTextStyle(
+                size: 17,
+                weight: FontWeight.w400,
+                color: text == 'Delete'
+                    ? ColorsConst.colorFE3B30
+                    : ColorsConst.colorBlack,
+              ),
+            ),
+            SvgPicture.asset('assets/icons/$nameSVG.svg', height: 19),
+          ],
+        ),
+        onTap: () {
+          Navigator.pop(context);
+        },
+      ),
     );
   }
 }
