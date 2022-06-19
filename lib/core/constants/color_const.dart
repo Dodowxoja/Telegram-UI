@@ -1,8 +1,9 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 class ColorsConst {
   static Color colorWhite = const Color(0xffFFFFFF);
   static Color colorBlack = const Color(0xff000000);
+  static Color colorTransparent = Colors.transparent;
 
   // Telegram Authorization (1 - Page)
   static Color color007AFF = const Color(0xff007AFF);
