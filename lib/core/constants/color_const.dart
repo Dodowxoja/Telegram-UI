@@ -41,4 +41,5 @@ class ColorsConst {
   // Telegram
   static Color color636366 = const Color(0xff636366);
   static Color colorCCE4F9 = const Color(0xffCCE4F9);
+  static Color colorC7C7CC = const Color(0xffC7C7CC);
 }

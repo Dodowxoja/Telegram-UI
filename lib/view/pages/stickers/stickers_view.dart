@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:telegram/core/components/appbars/my_app_bart_calls_comp.dart';
-import 'package:telegram/core/components/containers/a.dart';
+import 'package:telegram/core/components/containers/my_container_stickers_comp.dart';
 import 'package:telegram/core/components/dividers/my_divider_stickers_comp.dart';
 import 'package:telegram/core/components/inkwells/my_inkwell_stickers_comp.dart';
 import 'package:telegram/core/components/my_row_stickers_comp.dart';
