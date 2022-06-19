@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:telegram/core/components/my_text_style_comp.dart';
 import 'package:telegram/core/constants/color_const.dart';
 import 'package:telegram/view/cart/pages/calls/calls_view.dart';
+import 'package:telegram/view/cart/pages/chats/chat_view.dart';
 import 'package:telegram/view/cart/pages/chats/chats_view.dart';
 import 'package:telegram/view/cart/pages/contacts/contacts_view.dart';
 import 'package:telegram/view/cart/pages/settings/settings_view.dart';
@@ -30,7 +31,7 @@ class _CartViewState extends State<CartView> with TickerProviderStateMixin {
       body: TabBarView(
         physics: const NeverScrollableScrollPhysics(),
         controller: controller,
-        children: const [
+        children:  [
           ContactsView(),
           CallsView(),
           ChatsView(),
