@@ -24,14 +24,14 @@ class MyRoutes {
       case '/info':
         return MaterialPageRoute(builder: (_) => const InfoView());
 
-      case '/auth':
-        return MaterialPageRoute(builder: (_) => AuthView());
+      // case '/auth':
+      //   return MaterialPageRoute(builder: (_) => AuthView());
 
-      case '/auth':
-        return MaterialPageRoute(builder: (_) => AuthView());
+      // case '/auth':
+      //   return MaterialPageRoute(builder: (_) => AuthView());
 
-      case '/auth':
-        return MaterialPageRoute(builder: (_) => AuthView());
+      // case '/auth':
+      //   return MaterialPageRoute(builder: (_) => AuthView());
     }
   }
 }

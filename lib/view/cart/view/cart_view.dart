@@ -48,7 +48,6 @@ class _CartViewState extends State<CartView> with TickerProviderStateMixin {
           myTabProfile(3, 'tabBarContacts2', 'tabBarContacts1', 'Settings'),
         ],
         onTap: (v) {
-          print(controller!.index);
           setState(() {});
           controller!.index = v;
         },
