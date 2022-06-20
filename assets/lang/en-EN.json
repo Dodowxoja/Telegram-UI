@@ -30,7 +30,7 @@
     "Notifications":"Notifications",
     "Enabled":"Enabled",
     "Delete_C":"Delete Contact",
-
+    
     "online":"online",
     "username":"username",
     "Send Message":"Send Message",
@@ -50,10 +50,12 @@
     "Add Account":"Add Account",
     "Recent Calls":"Recent Calls",
     "Stickers":"Stickers",
+    "stickers":"stickers",
     "Notifications and Sounds":"Notifications and Sounds",
     "Privacy and Security":"Privacy and Security",
     "Appearance":"Appearance",
 
+    "Edit Profile":"Edit Profile",
     "E_y_n_a_a_a_o_p_p":"Enter your name and add an optional profile photo.",
     "A_d_s_a_a_o_o_c_E_23_y_d_f_S_F":"Any details such as age, occupation or city. Example: 23 y.o. designer from San Francisco.",
     "Change_N":"Change Number",

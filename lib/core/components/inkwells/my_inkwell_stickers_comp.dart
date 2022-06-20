@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:telegram/core/components/my_text_style_comp.dart';
 import 'package:telegram/core/constants/color_const.dart';
 
-class MyInkwellStickersComp{
-  static InkWell myInkwellStickersComp(String svg, String text) {
+class MyInkwellStickersComp {
+  static InkWell myInkwellStickersComp(String png, String text) {
     return InkWell(
       child: Padding(
         padding: const EdgeInsets.only(left: 20),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset("assets/images/$svg.png"),
+            Image.asset("assets/images/stickers/$png.png"),
             const SizedBox(width: 20),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,

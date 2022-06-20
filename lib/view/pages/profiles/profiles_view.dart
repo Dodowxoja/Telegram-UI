@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:telegram/core/components/appbars/my_app_bar_profiles_comp.dart';
 import 'package:telegram/core/components/containers/my_container_profiles_comp.dart';
@@ -61,7 +62,7 @@ class ProfileView extends StatelessWidget {
           SizedBox(
             height: MediaQuery.of(context).size.height * 0.06,
             child: MyPaddingProfilesComp.myPaddingProfilesComp(
-              "Enter your name and add an optional profile photo.",
+              "E_y_n_a_a_a_o_p_p".tr(),
             ),
           ),
           MyContainerProfilesComp.myContainerProfilesComp(
@@ -78,7 +79,7 @@ class ProfileView extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25),
               child: MyPaddingProfilesComp.myPaddingProfilesComp(
-                "Any details such as age, occupation or city. Example: 23 y.o. designer from San Francisco.",
+                "A_d_s_a_a_o_o_c_E_23_y_d_f_S_F".tr(),
               ),
             ),
           ),
@@ -96,7 +97,7 @@ class ProfileView extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           MyTextProfilesTextComp.myTextProfilesTextComp1(
-                              "Change Number"),
+                              "Change_N".tr()),
                           MyTextProfilesTextComp.myTextProfilesTextComp2(
                               "+1 202 555 0147"),
                           Icon(
@@ -121,7 +122,7 @@ class ProfileView extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         MyTextProfilesTextComp.myTextProfilesTextComp1(
-                            "Username"),
+                            "Username".tr()),
                         MyTextProfilesTextComp.myTextProfilesTextComp2(
                             "@jacob_designer"),
                         Icon(
@@ -143,7 +144,7 @@ class ProfileView extends StatelessWidget {
               MediaQuery.of(context).size.height * 0.06,
               Center(
                 child: Text(
-                  "Add Account",
+                  "Add Account".tr(),
                   style: MyTextStyleComp.myTextStyle(
                       color: ColorsConst.color037EE5, size: 18),
                 ),
@@ -158,7 +159,7 @@ class ProfileView extends StatelessWidget {
               MediaQuery.of(context).size.height * 0.06,
               Center(
                 child: Text(
-                  "Log Out",
+                  "Log Out".tr(),
                   style: MyTextStyleComp.myTextStyle(
                       color: ColorsConst.colorFE3B30, size: 18),
                 ),

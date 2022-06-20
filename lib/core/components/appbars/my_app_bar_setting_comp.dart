@@ -25,7 +25,9 @@ class MyAppBarSettingComp {
               size: 17,
             ),
           ),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, '/profile');
+          },
         ),
       ],
       bottom: PreferredSize(
