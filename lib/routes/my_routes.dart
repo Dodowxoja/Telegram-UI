@@ -41,8 +41,7 @@ class MyRoutes {
         return MaterialPageRoute(builder: (_) => const NotificationsView());
 
       case '/privacyAndSecurity':
-        return MaterialPageRoute(
-            builder: (_) => const PrivacyAndSecurityView());
+        return MaterialPageRoute(builder: (_) => PrivacyAndSecurityView());
 
       case '/dataAndStorage':
         return MaterialPageRoute(builder: (_) => const DataAndStorageView());
@@ -51,7 +50,7 @@ class MyRoutes {
         return MaterialPageRoute(builder: (_) => const ApperanceView());
 
       case '/languages':
-        return MaterialPageRoute(builder: (_) => const LanguagesView());
+        return MaterialPageRoute(builder: (_) => LanguagesView());
     }
   }
 }

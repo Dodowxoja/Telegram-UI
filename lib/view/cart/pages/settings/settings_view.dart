@@ -96,18 +96,26 @@ class SettingsView extends StatelessWidget {
                   child: MyInkwellSettingsComp.myInkwellSettingsComp(
                     "settingsNotificationsAndSounds",
                     "Notifications and Sounds",
-                    () {},
+                    () {
+                      Navigator.pushNamed(context, '/notifications');
+                    },
                   ),
                 ),
                 MyDividerSettingComp.myDividerSettingComp(context),
                 MyInkwellSettingsComp.myInkwellSettingsComp(
-                    "settingsPrivacySecurity", "Privacy and Security", () {}),
+                    "settingsPrivacySecurity", "Privacy and Security", () {
+                  Navigator.pushNamed(context, '/privacyAndSecurity');
+                }),
                 MyDividerSettingComp.myDividerSettingComp(context),
                 MyInkwellSettingsComp.myInkwellSettingsComp(
-                    "settingsDataStorage", "Data and Storage", () {}),
+                    "settingsDataStorage", "Data and Storage", () {
+                  Navigator.pushNamed(context, '/dataAndStorage');
+                }),
                 MyDividerSettingComp.myDividerSettingComp(context),
                 MyInkwellSettingsComp.myInkwellSettingsComp(
-                    "settingsAppearance", "Appearance", () {}),
+                    "settingsAppearance", "Appearance", () {
+                  Navigator.pushNamed(context, '/apperance');
+                }),
               ],
             ),
           ),
